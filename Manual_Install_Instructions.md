@@ -16,8 +16,8 @@ sudo chown -R $(whoami):sudo /home/$(whoami)/REDIS_PUBLIC
 ```
 sudo docker run -dit --restart='always' \
 --name redis -p 6379:6379 \
--v /home/$(whoami)/REDIS_PUBLIC/:/bitnami/redis/data \
-bitnami/redis:latest
+-v /home/$(whoami)/REDIS_PUBLIC/:/data \
+redis:latest
 ```
 ```
 sudo apt-get install redis-tools
