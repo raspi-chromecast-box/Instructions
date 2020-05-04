@@ -16,7 +16,7 @@ sudo chown -R $(whoami):sudo /home/$(whoami)/REDIS_PUBLIC
 ```
 sudo docker run -dit --restart='always' \
 --name redis -p 6379:6379 \
--v /home/$(whoami)/REDIS_PUBLIC/:/data \
+-v /home/$(whoami)/REDIS_PUBLIC/:/var/lib/redis/ \
 redis:latest
 ```
 ```
