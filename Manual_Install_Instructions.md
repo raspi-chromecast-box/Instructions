@@ -19,6 +19,9 @@ sudo docker run -dit --restart='always' \
 -v /home/$(whoami)/REDIS_PUBLIC/:/bitnami/redis/data \
 bitnami/redis:latest
 ```
+```
+sudo apt-get install redis-tools
+```
 
 ## 3.) Install Chromecast IP Watcher
 https://github.com/raspi-chromecast-box/ChromecastIPWatcher
