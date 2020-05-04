@@ -5,6 +5,9 @@ https://github.com/raspi-chromecast-box/Instructions/blob/master/Docker_Install.
 
 ## 2.) Start a Redis Docker Image
 ```
+mkdir /home/$(whoami)/REDIS_PUBLIC
+```
+```
 sudo chmod 777 /home/$(whoami)/REDIS_PUBLIC
 ```
 ```
